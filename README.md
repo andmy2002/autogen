@@ -39,27 +39,60 @@
 
 AutoGen is a framework that enables the development of LLM applications using multiple agents that can converse with each other to solve tasks. AutoGen agents are customizable, conversable, and seamlessly allow human participation. They can operate in various modes that employ combinations of LLMs, human inputs, and tools.
 
+AutoGen 是一个框架，支持使用多个代理来开发 LLM 应用程序，这些代理可以相互对话来解决任务。 AutoGen 代理是可定制的、可对话的，并且无缝地允许人类参与。 他们可以采用LLMS、人工输入和工具组合的各种模式运作。
+
+---
+
 ![AutoGen Overview](https://github.com/microsoft/autogen/blob/main/website/static/img/autogen_agentchat.png)
 
 - AutoGen enables building next-gen LLM applications based on [multi-agent conversations](https://microsoft.github.io/autogen/docs/Use-Cases/agent_chat) with minimal effort. It simplifies the orchestration, automation, and optimization of a complex LLM workflow. It maximizes the performance of LLM models and overcomes their weaknesses.
+
+- AutoGen 能够以最小的努力构建基于[多代理对话](https://microsoft.github.io/autogen/docs/Use-Cases/agent_chat)的下一代 LLM 应用程序。 它简化了复杂的 LLM 工作流程的编排、自动化和优化。 它最大限度地提高了 LLM 模型的性能并克服了它们的弱点。
+
+---
+
 - It supports [diverse conversation patterns](https://microsoft.github.io/autogen/docs/Use-Cases/agent_chat#supporting-diverse-conversation-patterns) for complex workflows. With customizable and conversable agents, developers can use AutoGen to build a wide range of conversation patterns concerning conversation autonomy,
   the number of agents, and agent conversation topology.
+
+- 它支持复杂工作流程的[多种对话模式](https://microsoft.github.io/autogen/docs/Use-Cases/agent_chat#supporting-diverse-conversation-patterns)。 通过可定制和可对话的代理，开发人员可以使用 AutoGen 构建有关对话自主性的各种对话模式，
+   代理数量和代理会话拓扑。
+
+---
+
 - It provides a collection of working systems with different complexities. These systems span a [wide range of applications](https://microsoft.github.io/autogen/docs/Use-Cases/agent_chat#diverse-applications-implemented-with-autogen) from various domains and complexities. This demonstrates how AutoGen can easily support diverse conversation patterns.
+
+- 它提供了一系列具有不同复杂性的工作系统。 这些系统涵盖了来自不同领域和复杂性的广泛应用程序。 这演示了 AutoGen 如何轻松支持不同的对话模式。
+
+---
+
 - AutoGen provides [enhanced LLM inference](https://microsoft.github.io/autogen/docs/Use-Cases/enhanced_inference#api-unification). It offers utilities like API unification and caching, and advanced usage patterns, such as error handling, multi-config inference, context programming, etc.
+
+- AutoGen 提供[增强的 LLM 推理](https://microsoft.github.io/autogen/docs/Use-Cases/enhanced_inference#api-unification)。 它提供 API 统一和缓存等实用程序，以及错误处理、多配置推理、上下文编程等高级使用模式。
+
+---
 
 AutoGen is powered by collaborative [research studies](https://microsoft.github.io/autogen/docs/Research) from Microsoft, Penn State University, and the University of Washington.
 
-## Quickstart
+
+AutoGen 由 Microsoft、宾夕法尼亚州立大学和华盛顿大学的协作[研究](https://microsoft.github.io/autogen/docs/Research) 提供支持。
+
+## *Quickstart*
+
 The easiest way to start playing is
-1. Click below to use the GitHub Codespace
+
+1. Click below to use the GitHub Codespace//用codespaces直接打开
 
     [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/microsoft/autogen?quickstart=1)
 
- 2. Copy OAI_CONFIG_LIST_sample to ./notebook folder, name to OAI_CONFIG_LIST, and set the correct configuration.
- 3. Start playing with the notebooks!
+2. Copy OAI_CONFIG_LIST_sample to ./notebook folder, name to OAI_CONFIG_LIST, and set the correct configuration.
 
-## Using existing docker image
+3. Start playing with the notebooks!
+
+## Using existing docker image  -使用现有的 docker 镜像
+
 Install docker, save your oai key into an environment variable name OPENAI_API_KEY, and then run the following.
+
+安装 docker，将您的 oai 密钥保存到名为 OPENAI_API_KEY 的环境变量中，然后运行以下命令。
 
 ```
 docker pull yuandongtian/autogen:latest
@@ -68,7 +101,9 @@ docker run -it -e OPENAI_API_KEY=$OPENAI_API_KEY -p 8081:8081 docker.io/yuandong
 
 Then open `http://localhost:8081/` in your browser to use AutoGen. The UI is from `./samples/apps/autogen-assistant`. See docker hub [link](https://hub.docker.com/r/yuandongtian/autogen) for more details.
 
-## Installation
+然后在浏览器中打开“http://localhost:8081/”以使用 AutoGen。 UI 来自“./samples/apps/autogen-assistant”。 有关更多详细信息，请参阅 docker hub [链接](https://hub.docker.com/r/yuandongtian/autogen)。
+
+## Installation安装
 
 AutoGen requires **Python version >= 3.8, < 3.12**. It can be installed from pip:
 

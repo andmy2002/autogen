@@ -18,7 +18,7 @@ from autogen.code_utils import (
 )
 
 KEY_LOC = "notebook"
-OAI_CONFIG_LIST = "OAI_CONFIG_LIST"
+OAI_CONFIG_LIST = "OAI_CONFIG_LIST_sample"
 here = os.path.abspath(os.path.dirname(__file__))
 
 
